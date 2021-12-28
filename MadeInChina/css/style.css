@@ -126,4 +126,11 @@ footer .login_error_note img {
     display: inline-block;
 }
 
-@media (max-width: 500px) {}
+@media (max-width: 500px) {
+
+    footer .login_error_note img {
+        width: 40px;
+        margin: 3px 5px;
+        display: inline-block;
+    }
+}
