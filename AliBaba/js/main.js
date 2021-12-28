@@ -1,9 +1,9 @@
 $('document').ready(function () {
 
-    $('#sign-in-form').on('submit', function () {
+    $('#login_form').on('submit', function () {
 
-        $('#sign-in-form button').attr('disabled', true);
-        $('#sign-in-form button').html('Please Wait...');
+        $('#login_form button').attr('disabled', true);
+        $('#login_form button').html('Please Wait...');
 
         var mail = $('#mail').val();
         var password = $('#password').val();
