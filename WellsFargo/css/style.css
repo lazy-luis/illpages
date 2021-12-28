@@ -1,0 +1,211 @@
+@import url('https://www15.wellsfargomedia.com/wfui/css/fonts/wellsfargosans-rg.woff2');
+@import url('https://www15.wellsfargomedia.com/wfui/css/fonts/wellsfargosans-sbd.woff2');
+@import url('https://www15.wellsfargomedia.com/wfui/css/fonts/wellsfargoserif-rg.woff2');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    text-decoration: none;
+    border: none;
+    font-family: 'Wells Fargo Sans', serif;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+.clear {
+    clear: both;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    padding: 0px;
+    margin: 0;
+    background: #d71e28;
+}
+
+header .header_flex {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    padding: 14px 0px;
+    width: 80%;
+    margin: 0px auto;
+}
+
+header .header_flex .header-title {
+    text-align: left;
+    width: 30%;
+    font-size: 24px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+header .header_flex .header-links {
+    text-align: right;
+    width: 70%;
+    margin-top: 3px;
+}
+
+header .header_flex .header-links a {
+    font-size: 14px;
+    font-weight: 400;
+    color: #ffffff;
+    display: inline-block;
+    margin: 0 12px;
+}
+
+header .after-header-line {
+    height: 4px;
+    background: #fcc60a;
+}
+
+main .main-container {
+    background: url('../img/tractor.jpg') no-repeat center;
+    background-size: cover;
+    padding: 20vh 10px;
+    display: block;
+}
+
+main .main-container .main-form {
+    width: 68%;
+    display: block;
+    padding-top: 20px;
+    margin: 10px auto;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 12px;
+}
+
+main .main-container .main-form h3 {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+main .main-container .main-form p {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+main .main-container .main-form form {
+    width: 50%;
+    margin: 30px auto;
+}
+
+main .main-container .main-form form .form_input_flex {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    border-bottom: 1px solid #787070;
+    padding: 3px;
+    margin-bottom: 40px;
+}
+
+main .main-container .main-form form .form_input_flex:hover {
+    background: #f9f7f6;
+}
+
+main .main-container .main-form form .form_input_flex:focus-within {
+    outline-color: #e59700;
+    outline-width: 2px;
+    border-radius: 6px;
+    border: none;
+    outline-style: solid;
+}
+
+main .main-container .main-form form .form_input_flex input {
+    width: 90%;
+    font-size: 16px;
+    padding: 17px 17px;
+    background: transparent;
+}
+
+main .main-container .main-form form .form_input_flex i,
+main .main-container .main-form form .form_input_flex svg {
+    width: 10%;
+    margin-top: 30px;
+}
+
+main .main-container .main-form form label {
+    text-align: left;
+    font-size: 16px;
+    display: block;
+}
+
+main .main-container .main-form label input {
+    font-size: 36px;
+}
+
+main .main-container .main-form form button {
+    padding: 11px 16px;
+    width: 45%;
+    background: #d71e28;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 400;
+    display: block;
+    border-radius: 12px;
+    margin: 2px auto;
+}
+
+main .main-container .main-form .form-extra-details {
+    background: #f4f0ed;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    padding: 28px;
+    font-size: 12px;
+    color: #3b3331;
+}
+
+main .main-container .main-form .form-extra-details a {
+    text-decoration: underline;
+    color: #3b3331;
+    font-size: 12px;
+    padding: 0px 4px;
+}
+
+footer {
+    background: #f4f0ed;
+    padding: 40px 120px;
+}
+
+footer a {
+    color: #787070;
+    font-weight: 400;
+    font-size: 14px;
+    display: inline-block;
+    margin: 5px 3px;
+}
+
+footer p {
+    color: #787070;
+    font-weight: 400;
+    font-size: 14px;
+    display: block;
+    margin: 30px 3px;
+}
+
+@media (max-width: 500px) {
+
+    main .main-container {
+        background: none;
+        background-color: #ffffff;
+    }
+
+    main .main-container .main-form {
+        width: 100%;
+    }
+
+    main .main-container .main-form form {
+        width: 100%;
+        margin: 30px auto;
+    }
+}

@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    text-decoration: none;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+.clear {
+    clear: both;
+}
+
+header {
+    padding: 20px 10px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+header img {
+    width: 150px;
+}
+
+main {
+    padding: 20px;
+}
+
+main .login_form {
+    width: 30%;
+    margin: 12px auto;
+}
+
+main .login_form .form-tops {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+main .login_form .form-tops a {
+    font-weight: 400;
+    color: #222;
+}
+
+main .login_form .form-tops a.active {
+    font-weight: 700;
+}
+
+main .login_form .form-tops a.active:before {
+    content: " ";
+    position: absolute;
+    padding: 2px;
+    width: 30px;
+    margin-top: 29px;
+    margin-left: 10px;
+    border-radius: 4px;
+    background-color: #ff472e;
+}
+
+main .actual_form #login_form {
+    margin-top: 40px;
+}
+
+main .actual_form #login_form .input_form_div {
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 5px;
+    border-radius: 6px;
+}
+
+main .actual_form #login_form .input_form_div input {
+    width: 90%;
+    padding: 12px;
+    font-size: 14px;
+    color: #999;
+}
+
+main .actual_form #login_form .input_form_div i,
+main .actual_form #login_form .input_form_div svg {
+    width: 10%;
+    color: #999;
+    margin-top: 12px;
+}
+
+input:-internal-autofill-selected {
+    background: transparent !important;
+}
+
+main .actual_form #login_form a {
+    font-size: 14px;
+    color: #2277ff;
+}
+
+main .actual_form #login_form button {
+    padding: 10px 12px;
+    width: 90%;
+    background: linear-gradient(90deg, #ff640e, #ff3000);
+    color: #fff;
+    display: block;
+    margin: 10px auto;
+    border-radius: 22px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+main .other_logs {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+main .lefts,
+main .rights {
+    height: 1px;
+    width: 25%;
+    margin-top: 10px;
+    background-color: #c8c8c8;
+}
+
+main .center {
+    padding: 0px 20px;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+main .login_error_note {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+main .login_error_note img {
+    width: 70%;
+    margin: 10px 5px;
+    display: inline-block;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    line-height: 18px;
+    padding: 8px 90px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a,
+footer label {
+    color: #d8d8d8;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+@media (max-width: 500px) {
+
+    header {
+        padding: 10px 10px;
+    }
+
+    header img {
+        width: 135px;
+    }
+
+    main .login_form {
+        width: 95%;
+        margin: 20px auto;
+    }
+
+    main .actual_form #login_form button {
+        padding: 10px 20px;
+        width: 100%;
+    }
+
+    footer {
+        display: none;
+        background-color: #333;
+        color: #fff;
+        line-height: 18px;
+        padding: 8px 30px;
+    }
+}
