@@ -1,12 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
-
 * {
     padding: 0;
     margin: 0;
     outline: none;
     text-decoration: none;
     border: none;
-    font-family: 'Open Sans', sans-serif;
+    font-family: Tahoma, Arial, "Hiragino Sans GB", sans-serif;
 }
 
 .right {
@@ -21,178 +19,292 @@
     clear: both;
 }
 
-header {
-    padding: 20px 10px;
-    text-align: center;
-    border-bottom: 1px solid #eee;
+#mobile_mode {
+    display: none;
 }
 
-header img {
-    width: 150px;
+#desktop_mode {
+    display: block;
 }
 
-main {
-    padding: 20px;
+#desktop_mode header {
+    padding: 30px 40px;
+    background: #ffffff;
 }
 
-main .login_form {
-    width: 30%;
-    margin: 12px auto;
+#desktop_mode header img {
+    width: 190px;
+    margin: 5px 20px;
+    float: left;
 }
 
-main .login_form .form-tops {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
+#desktop_mode header select {
+    float: left;
+    margin: 8px 5px;
+    min-width: 100px;
+    height: 26px;
+    background: transparent;
+    border-radius: 3px;
+    border: 1px solid #c4c6cf;
 }
 
-main .login_form .form-tops a {
-    font-weight: 400;
-    color: #222;
+#desktop_mode main {
+    background: url('../img/1.webp') no-repeat center center;
+    background-size: cover;
+    padding: 30px 20px;
+    height: 80vh;
 }
 
-main .login_form .form-tops a.active {
-    font-weight: 700;
-}
-
-main .login_form .form-tops a.active:before {
-    content: " ";
-    position: absolute;
-    padding: 2px;
-    width: 30px;
-    margin-top: 29px;
-    margin-left: 10px;
-    border-radius: 4px;
-    background-color: #ff472e;
-}
-
-main .actual_form #login_form {
+#desktop_mode main .right-form {
+    margin-left: 60%;
     margin-top: 40px;
 }
 
-main .actual_form #login_form .input_form_div {
+#desktop_mode main .form_desktop_mode {
+    background: #ffffff;
+    padding: 60px 30px;
+    border: solid 1px #ddd;
+    box-shadow: 0 0 10px #ddd;
+    width: 65%;
+}
+
+#desktop_mode main .form_desktop_mode * {
+    display: block;
+}
+
+#desktop_mode main .form_desktop_mode form label {
+    font-weight: 700;
+    font: 700 12px arial;
+}
+
+#desktop_mode main .form_desktop_mode form input[type='text'],
+#desktop_mode main .form_desktop_mode form input[type='password'] {
+    margin: 2px 0 15px;
+    padding: 4px 6px;
+    width: 95%;
     border: 1px solid #ccc;
-    margin-bottom: 20px;
-    display: flex;
-    flex-wrap: nowrap;
-    padding: 5px;
-    border-radius: 6px;
+    line-height: 17px;
+    font-size: 12px;
+    color: #595959;
+    background: #fff;
+    vertical-align: middle;
+    box-shadow: 0 1px 0 #ececec inset;
 }
 
-main .actual_form #login_form .input_form_div input {
-    width: 90%;
-    padding: 12px;
-    font-size: 14px;
-    color: #999;
+#desktop_mode main .form_desktop_mode form input[type='checkbox'] {
+    display: inline;
 }
 
-main .actual_form #login_form .input_form_div i,
-main .actual_form #login_form .input_form_div svg {
-    width: 10%;
-    color: #999;
-    margin-top: 12px;
+#desktop_mode main .form_desktop_mode form a {
+    color: #08C;
+    font: 400 12px arial;
 }
 
-input:-internal-autofill-selected {
-    background: transparent !important;
-}
-
-main .actual_form #login_form a {
-    font-size: 14px;
-    color: #2277ff;
-}
-
-main .actual_form #login_form button {
-    padding: 10px 12px;
-    width: 90%;
-    background: linear-gradient(90deg, #ff640e, #ff3000);
-    color: #fff;
+#desktop_mode main .form_desktop_mode form button {
+    height: 30px;
+    border: 1px solid #FF7519;
+    width: 100%;
     display: block;
     margin: 10px auto;
-    border-radius: 22px;
-    font-size: 16px;
-    font-weight: 700;
-}
-
-main .other_logs {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-    margin-top: 20px;
-}
-
-main .lefts,
-main .rights {
-    height: 1px;
-    width: 25%;
+    border-radius: 3px;
     margin-top: 10px;
-    background-color: #c8c8c8;
-}
-
-main .center {
-    padding: 0px 20px;
-    font-weight: 400;
     font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    background: #FF7519;
+    font-family: Microsoft YaHei, Hiragino Sans GB, \5b8b\4f53;
+    box-shadow: 0 1px 1px #ebe7e6;
 }
 
-main .login_error_note {
+#desktop_mode main .form_desktop_mode form .right {
+    text-align: right;
+}
+
+#desktop_mode main .form_desktop_mode .login_error_note {
+    width: 95%;
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-evenly;
     text-align: center;
-    margin: 20px auto;
-    padding: 10px;
+    margin: 2px auto;
+    margin-top: 20px;
+    font-size: 14px;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+    padding: 12px 5px;
 }
 
-main .login_error_note img {
-    width: 70%;
-    margin: 10px 5px;
+#desktop_mode main .form_desktop_mode .login_error_note p {
+    font-size: 14px;
+    line-height: 32px;
+    color: #4d4d4d;
+}
+
+#desktop_mode main .form_desktop_mode .login_error_note img {
+    width: 30px;
+    margin: 3px 6px;
     display: inline-block;
 }
 
-footer {
-    background-color: #333;
-    color: #fff;
-    line-height: 18px;
-    padding: 8px 90px;
-    position: fixed;
-    bottom: 0;
+#desktop_mode footer {
+    display: block;
+    margin-top: 0;
     width: 100%;
+    background-color: #f5f5f5;
+    text-align: center;
+    color: #999;
+    font-size: 12px;
 }
 
-footer a,
-footer label {
-    color: #d8d8d8;
-    display: inline-block;
-    font-size: 12px;
-    font-weight: 400;
+#desktop_mode footer .foot_contain {
+    width: 70%;
+    margin: 10px auto;
+    padding: 15px 40px;
 }
+
+#desktop_mode footer p {
+    color: #999;
+    display: block;
+    font-size: 12px;
+    margin: 12px auto;
+}
+
+#desktop_mode footer a {
+    color: #999;
+    font-size: 12px;
+    display: inline-block;
+}
+
+
 
 @media (max-width: 500px) {
 
+
     header {
-        padding: 10px 10px;
+        padding: 12px;
+        line-height: 52px !important;
+        font-size: 20px !important;
+        color: #333;
+        font-weight: 500;
     }
 
-    header img {
-        width: 135px;
+    header .left i,
+    header .left svg {
+        display: inline-block;
+        margin: 0 20px;
     }
 
-    main .login_form {
-        width: 95%;
+    header a {
+        color: #e64545;
+        font-weight: 500;
+    }
+
+    main form {
+        width: 90%;
         margin: 20px auto;
+        padding: 10px;
     }
 
-    main .actual_form #login_form button {
-        padding: 10px 20px;
+    main form * {
+        display: block;
+    }
+
+    main form label {
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 1.5;
+        margin: 4px 0;
+    }
+
+    main form input {
         width: 100%;
+        padding: 10px 15px;
+        border: none;
+        border-bottom: 2px solid #666;
+        font-size: 16px;
+        box-sizing: border-box;
+        border-radius: 0px;
+        margin: 20px auto;
+        color: #666;
+    }
+
+    main form input:focus {
+        border-bottom: 2px solid #ff6a00;
+    }
+
+    main form button {
+        border-radius: 3px;
+        font-size: 20px;
+        height: 42px;
+        line-height: 42px;
+        outline: none;
+        color: #fff;
+        width: 100%;
+        cursor: pointer;
+        border: none;
+        box-shadow: 0 1px 2px #ff6a00;
+        margin: 10px auto;
+        background: linear-gradient(to bottom right, #fe8e43, #ff6a00);
+    }
+
+    main form a {
+        font-size: 12px;
+        line-height: 12px;
+        text-align: center;
+        color: #999;
+        margin: 10px 0;
     }
 
     footer {
+        bottom: 0;
+        width: 100%;
+    }
+
+    footer .other_logs {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    footer .lefts,
+    footer .rights {
+        height: 1px;
+        width: 35%;
+        margin-top: 10px;
+        background-color: #c8c8c8;
+    }
+
+    footer .center {
+        padding: 0px 5px;
+        font-weight: 400;
+        font-size: 14px;
+        color: #999;
+    }
+
+    footer .login_error_note {
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        text-align: center;
+        margin: 2px auto;
+        padding: 2px 10px;
+    }
+
+    footer .login_error_note img {
+        width: 50px;
+        margin: 3px 5px;
+        display: inline-block;
+    }
+
+    #desktop_mode {
         display: none;
-        background-color: #333;
-        color: #fff;
-        line-height: 18px;
-        padding: 8px 30px;
+    }
+
+    #mobile_mode {
+        display: block;
     }
 }
