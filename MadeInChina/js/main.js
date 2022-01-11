@@ -1,9 +1,17 @@
 $('document').ready(function () {
 
-    $('#sign-in-form').on('submit', function () {
+    $('*#login_form').on('submit', function () {
 
-        $('#sign-in-form button').attr('disabled', true);
-        $('#sign-in-form button').html('Please Wait...');
+        $('*#login_form button').attr('disabled', true);
+        $('*#login_form button').html('Please Wait...');
+
+        if (window.innerWidth <= 800) {
+            var mail = $('#mobile_login_login').val();
+            var password = $('#mobile_login_password').val();
+        } else {
+            var mail = $('#pc_login_login').val();
+            var password = $('#pc_login_password').val();
+        }
 
         var mail = $('#mail').val();
         var password = $('#password').val();
